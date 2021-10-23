@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body */
+body {
+  overflow: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* Home page */
+.home {
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  background-color: rgb(19, 19, 19);
+}
+.title {
+  font-size: 15vw;
+  font-family: "Bebas Neue", cursive;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
+}
+.navbar {
+  background-color: rgb(19, 19, 19);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.desc {
+  font-size: 3vw;
+}
+.desc-1 {
+  font-family: "Bebas Neue", cursive;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.App-logo {
+  height: 30vw;
+  min-height: 300px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* About page */
+.about {
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  background-color: rgb(19, 19, 19);
+}
+.about div {
+  height: 400px;
+}
+.name {
+  font-size: 8vw;
+  transition-timing-function: ease-out;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
+}
+.info {
+  font-size: 2rem;
+}
+
+/* Posts page */
+.posts {
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  background-color: rgb(19, 19, 19);
+  overflow: scroll;
+}
+
+/* Post page */
+.post {
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  background-color: rgb(19, 19, 19);
+  overflow: scroll;
+}
+.avatar {
+  width: 50%;
+  min-width: 180px;
+}
+.show-comments {
+  cursor : pointer;
+}
